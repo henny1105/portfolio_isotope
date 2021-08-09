@@ -8,9 +8,9 @@
 	<title>아이소톡-포트폴리오-김혜인</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/e2eac18c71.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script defer src="js/custom.js"></script>
 </head>
 
 <body>
@@ -27,18 +27,27 @@
 		</ul>
 	</header>
 
-	<section>
+	<figure id="visual">
+		<div class="pic"></div>
+		<h2>Smooth out your day,<br>
+			everyday</h2>
+		<p>Voluptate deleniti vitae consectetur, sapiente praesentium nihil?<br> Lorem, ipsum dolor.
+		</p>	
+		<a href="#">See our menu</a>
+	</figure>
+
+	<section id="gallery">
 		<ul class="filter">
-			<li><a href="*" class="on">VIEW ALL</a></li>
-			<li><a href=".odd">VIEW odd</a></li>
-			<li><a href=".even">VIEW even</a></li>
+			<li><a href="*" class="on">Beverages</a></li>
+			<li><a href=".Food">Food</a></li>
+			<li><a href=".Merchandise">Merchandise</a></li>
 		</ul>
 
 		<div class="wrap">
-			<article class="odd">
+			<article class="Beverages">
 				<div class="inner">
-					<img src="img/img1.png" alt="이미지" />
-					<h2>HOKKAIDO</h2>
+					<img src="img/pic1.jpg" alt="이미지" />
+					<h2>Americano</h2>
 					<strong class="best">BEST</strong>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -48,13 +57,13 @@
 						<i class="fas fa-star-half"></i>
 					</div>
 
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>The result is this wonderfully rich cup with depth and nuance.</p>
 				</div>
 			</article>
-			<article class="even">
+			<article class="Beverages">
 				<div class="inner">
-					<img src="img/img2.png" alt="이미지" />
-					<h2>MIYAGI</h2>
+					<img src="img/pic2.jpg" alt="이미지" />
+					<h2>Cappuccino</h2>
 					<strong class="new">NEW</strong>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -62,290 +71,212 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half"></i>
 					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>Our smooth signature Espresso Roast with rich flavor.</p>
 				</div>
 			</article>
-			<article class="odd">
+			<article class="Beverages">
 				<div class="inner">
-					<img src="img/img3.png" alt="이미지" />
-					<h2>IWATE</h2>
+					<img src="img/pic3.jpg" alt="이미지" />
+					<h2>Caramel Macchiato</h2>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<p>Freshly steamed milk with vanilla-flavoured syrup.</p>
+				</div>
+			</article>
+			<article class="Beverages">
+				<div class="inner">
+					<img src="img/pic4.jpg" alt="이미지" />
+					<h2>Caffè Mocha</h2>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<p>There’s no question chocolate and coffee are flavors that meant for each other.</p>
+				</div>
+			</article>
+			<article class="Beverages">
+				<div class="inner">
+					<img src="img/pic5.jpg" alt="이미지" />
+					<h2>Cold Brew</h2>
 					<strong class="new">NEW</strong>
 					<div class="star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half"></i>
 					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>Slow-steeped in cool water for more than 10 hours and handcrafted in small batches each day.</p>
 				</div>
 			</article>
-			<article class="even">
+			<article class="Beverages">
 				<div class="inner">
-					<img src="img/img4.png" alt="이미지" />
-					<h2>AKITA</h2>
+					<img src="img/pic6.jpg" alt="이미지" />
+					<h2>Earl Grey Tea</h2>
 					<div class="star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
 					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>We take a strong black tea base and add the essence of bergamot.</p>
 				</div>
 			</article>
-			<article class="odd">
+			<article class="Food">
 				<div class="inner">
-					<img src="img/img5.png" alt="이미지" />
-					<h2>AOMORI</h2>
+					<img src="img/pic7.jpg" alt="이미지" />
+					<h2>Chocolate Cake</h2>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<p>Spoil yourself with this decadent chocolate cake.</p>
+				</div>
+			</article>
+			<article class="Food">
+				<div class="inner">
+					<img src="img/pic8.jpg" alt="이미지" />
+					<h2>Red Velvet Cake</h2>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<p>A soft, moist, and dreamy treat made up of layers of light sponge cake and glorious cream cheese.</p>
+				</div>
+			</article>
+			<article class="Food">
+				<div class="inner">
+					<img src="img/pic9.jpg" alt="이미지" />
+					<h2>Tiramisu Cake</h2>
 					<div class="star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half"></i>
 					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>Layers of soft Starbucks® coffee infused sponge and velvety mascapone cheese topped with chantilly cream and cocoa powder.</p>
 				</div>
 			</article>
-			<article class="even">
+			<article class="Food">
 				<div class="inner">
-					<img src="img/img6.png" alt="이미지" />
-					<h2>YMAGATA</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="odd">
-				<div class="inner">
-					<img src="img/img7.png" alt="이미지" />
-					<h2>FUKUSHIMA</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="even">
-				<div class="inner">
-					<img src="img/img8.png" alt="이미지" />
-					<h2>IBARAKI</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="odd">
-				<div class="inner">
-					<img src="img/img9.png" alt="이미지" />
-					<h2>TOCHOGI</h2>
+					<img src="img/pic10.jpg" alt="이미지" />
+					<h2>Cheesecake</h2>
 					<div class="star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half"></i>
 					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>A wonderfully decadent slice of cheesecake set on crumbly graham crust, a tasty companion for your fresh brew.</p>
 				</div>
 			</article>
-			<article class="even">
+			<article class="Food">
 				<div class="inner">
-					<img src="img/img10.png" alt="이미지" />
-					<h2>GUNMA</h2>
+					<img src="img/pic11.jpg" alt="이미지" />
+					<h2>Monster Cookie</h2>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<p>Sink your teeth into a wonderfully chewy cookie loaded with chocolate chunks.</p>
+				</div>
+			</article>
+			<article class="Food">
+				<div class="inner">
+					<img src="img/pic12.jpg" alt="이미지" />
+					<h2>Bagels</h2>
 					<div class="star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half"></i>
 					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>Start your day with a nutritious bagel.</p>
 				</div>
 			</article>
-			<article class="odd">
+			<article class="Food">
 				<div class="inner">
-					<img src="img/img11.png" alt="이미지" />
-					<h2>SAITAMA</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="even">
-				<div class="inner">
-					<img src="img/img12.png" alt="이미지" />
-					<h2>CHIBA</h2>
+					<img src="img/pic13.jpg" alt="이미지" />
+					<h2>Tuna & Cheese Ciabatta</h2>
 					<div class="star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half"></i>
 					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>Tuck into a hearty sandwich that is sure to satisfy. Wholesome tuna, lettuce, and edam cheese with every bite.</p>
 				</div>
 			</article>
-			<article class="odd">
+			<article class="Merchandise">
 				<div class="inner">
-					<img src="img/img13.png" alt="이미지" />
-					<h2>TOKYO</h2>
+					<img src="img/pic14.jpg" alt="이미지" />
+					<h2>Classic</h2>
 					<div class="star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half"></i>
 					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>Classic Starbucks mugs for your coffee fix.</p>
 				</div>
 			</article>
-			<article class="even">
+			<article class="Merchandise">
 				<div class="inner">
-					<img src="img/img14.png" alt="이미지" />
-					<h2>KANAGAWA</h2>
+					<img src="img/pic15.jpg" alt="이미지" />
+					<h2>Vintage</h2>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<p>Get through the busiest of days in style with this classic Starbucks® mug.</p>
+				</div>
+			</article>
+			<article class="Merchandise">
+				<div class="inner">
+					<img src="img/pic16.jpg" alt="이미지" />
+					<h2>Frosty</h2>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<p>Cold Cups in an icy blue for your icy sips.</p>
+				</div>
+			</article>
+			<article class="Merchandise">
+				<div class="inner">
+					<img src="img/pic17.jpg" alt="이미지" />
+					<h2>Siren</h2>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<p>Keep your coffee warm and your hands cool with your new favorite tumbler.</p>
+				</div>
+			</article>
+			<article class="Merchandise">
+				<div class="inner">
+					<img src="img/pic18.jpg" alt="이미지" />
+					<h2>Taupe</h2>
 					<div class="star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half"></i>
 					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="odd">
-				<div class="inner">
-					<img src="img/img15.png" alt="이미지" />
-					<h2>NIGATA</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="even">
-				<div class="inner">
-					<img src="img/img16.png" alt="이미지" />
-					<h2>TOYAMA</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="odd">
-				<div class="inner">
-					<img src="img/img17.png" alt="이미지" />
-					<h2>ISHIKAWA</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="even">
-				<div class="inner">
-					<img src="img/img18.png" alt="이미지" />
-					<h2>FUKUI</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="odd">
-				<div class="inner">
-					<img src="img/img19.png" alt="이미지" />
-					<h2>YAMANASHI</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="even">
-				<div class="inner">
-					<img src="img/img20.png" alt="이미지" />
-					<h2>NAGANO</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="odd">
-				<div class="inner">
-					<img src="img/img21.png" alt="이미지" />
-					<h2>GIFU</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="even">
-				<div class="inner">
-					<img src="img/img22.png" alt="이미지" />
-					<h2>SHIZUOKA</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="odd">
-				<div class="inner">
-					<img src="img/img23.png" alt="이미지" />
-					<h2>AICHI</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-				</div>
-			</article>
-			<article class="even">
-				<div class="inner">
-					<img src="img/img24.png" alt="이미지" />
-					<h2>MIE</h2>
-					<div class="star">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half"></i>
-					</div>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>Our classic water bottle in taupe and with minimalist line art.</p>
 				</div>
 			</article>
 		</div>

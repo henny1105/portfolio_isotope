@@ -1,7 +1,9 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300;400;600&display=swap');
 
-/* reset */
+// reset
+
 * {
     margin: 0px;
     padding: 0px;
@@ -22,7 +24,7 @@ body {
     background: #eae7db;
 }
 
-
+// 전체 레이아웃
 
 header {
     position: fixed;
@@ -31,7 +33,7 @@ header {
     width: 400px;
     height: 100%;
     background: url(../img/bg_v2.png) no-repeat center/cover;
-    // background: #006241;
+    z-index: 5;
 
     h1 {
         text-align: center;
@@ -92,12 +94,60 @@ header {
             }
         }
     }
+}
 
+#visual {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    z-index: 1;
+
+    .pic {
+        width: 100%;
+        height: 100%;
+        background: url(../img/bg2.jpg) no-repeat bottom/cover;
+        object-fit: cover;
+    }
+
+    h2 {
+        position: absolute;
+        top: 16%;
+        left: 28%;
+        font: 50px/1.2 'Georama';
+        font-weight: 600;
+        color: #35332b;
+    }
+
+    p {
+        position: absolute;
+        top: 45%;
+        left: 28%;
+        font: 16px/1.5 'Open Sans';
+        color: #3a3934;
+    }
+
+    a {
+        position: absolute;
+        top: 60%;
+        left: 28%;
+        display: block;
+        width: 170px;
+        height: 45px;
+        font: 16px/45px 'Open Sans';
+        color: #fff;
+        background: #006241;
+        text-align: center;
+        transition: 0.5s;
+
+        &:hover {
+            background: #079264;
+        }
+    }
 
 
 }
 
-section {
+#gallery {
     padding: 20px;
     margin-left: 400px;
     box-sizing: border-box;
@@ -115,13 +165,13 @@ section {
 
         li {
             float: left;
-            margin-right: 50px;
+            margin-right: 30px;
 
             a {
                 display: block;
-                width: 150%;
+                width: 100px;
                 height: 30px;
-                font: bold 7px/30px 'Open Sans`';
+                font: 13px/30px 'Open Sans';
                 background: #fff;
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
                 color: #aaa;
@@ -147,6 +197,7 @@ section {
         article {
             float: left;
             width: calc(100%/6);
+            height: 42vh;
             padding: 15px;
 
             .inner {
@@ -157,16 +208,11 @@ section {
                 border-radius: 2%;
                 padding: 15px;
                 text-align: center;
-                
+                object-fit: cover;
 
                 img {
                     width: 100%;
                     margin-bottom: 15px;
-                    transition: 0.5s;
-
-                    &:hover {
-                        transform: scale(1.2);
-                    }
                 }
 
                 h2 {
@@ -192,7 +238,7 @@ section {
                     &.new {
                         background-color: #ffa135;
                     }
-                    
+
                 }
 
 
@@ -216,24 +262,31 @@ section {
     }
 }
 
-
-
 @media screen and (max-width: 1599px) {
 
     header {
         width: 300px;
     }
-    
-    header h1 {
-        font: bold 30px/1 'orbitron';
+
+    #visual {
+        p {
+            top: 50%;
+        }
+
+        a {
+            top: 70%;
+        }
     }
 
-    section .wrap article {
-        width: calc(100%/5);
+    #gallery {
+        .wrap {
+            article {
+                width: calc(100%/5);
+            }
+        }
     }
 }
 
-/* header 레이아웃 변경 */
 @media screen and (max-width: 1199px) {
 
     header {
@@ -244,13 +297,9 @@ section {
         h1 {
             top: 50%;
 
-            &::after {
-                display: none;
+            img {
+                width: 40%;
             }
-        }
-
-        img {
-            width: 40%;
         }
 
         p {
@@ -258,15 +307,21 @@ section {
         }
 
         .sns {
+            top: 50%;
             right: 50px;
-            bottom: 25px;
             left: auto;
         }
     }
 
+    #visual {
+        height: 55vh;
 
-    /* section margin-left 0으로 초기화 */
-    section {
+        h2, p, a {
+            left: 10%;
+        }
+    }
+
+    #gallery {
         margin-left: 0;
 
         .wrap {
@@ -275,55 +330,92 @@ section {
             }
         }
     }
-
 }
 
 @media screen and (max-width: 899px) {
 
-    section .wrap article {
-        width: calc(100%/3);
+    #visual {
+        height: 50vh;
+
+        h2 {
+            font: 40px/1.2 'Georama';
+            font-weight: 600;
+            color: #35332b;
+        }
+
+        p {
+            font: 15px/1.5 'Open Sans';
+            color: #3a3934;
+        }
+
+        a {
+            width: 160px;
+            height: 40px;
+            font: 15px/40px 'Open Sans';
+        }
     }
-}
 
-@media screen and (max-width: 679px) {
-
-
-    header .sns li {
-        margin-right: 0;
-        margin-left: 20px;
-    }
-
-    header .sns li a span {
-        display: none;
-    }
-
-    section .wrap article {
-        width: calc(100%/2);
+    #gallery {
+        .wrap {
+            article {
+                width: calc(100%/3);
+            }
+        }
     }
 }
 
 @media screen and (max-width: 539px) {
 
-    header h1 {
-        font-size: 20px;
-        left: 20px;
+    header {
+        h1 {
+            font-size: 20px;
+            left: 50px;
+        }
+
+        .sns {
+            right:-15px;
+        }
     }
 
-    section .filter li {
-        width: calc(100%/3);
-        padding: 0 5px;
-        margin-right: 0;
+    #visual {
+        height: 40vh;
+
+        h2 {
+            font: 30px/1.2 'Georama';
+            font-weight: 600;
+            color: #35332b;
+        }
+
+        p {
+            font: 14px/1.2 'Open Sans';
+            color: #3a3934;
+        }
+
+        a {
+            width: 150px;
+            height: 40px;
+            font: 14px/40px 'Open Sans';
+        }
     }
 
-    section .filter li a {
-        width: 100%;
-    }
+    #gallery {
+        .fliter {
+            li {
+                width: calc(100%/3);
+                padding: 0 5px;
+                margin-right: 0;
 
-    header .sns {
-        right: 20px;
-    }
+                a {
+                    width: 100%;
+                }
+            }
+        }
 
-    section .wrap article {
-        width: calc(100%/1);
+        .wrap {
+            article {
+                width: calc(100%/1);
+                height: auto;
+            }
+        }
     }
 }
