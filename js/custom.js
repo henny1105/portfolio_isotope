@@ -7,7 +7,7 @@ $grid = $(".wrap").isotope({ //모션을 적용할 박스의 부모 선택자명
     percentPosition: true //너비값이 퍼센트 :true, 고정픽셀:false 
 });
 
-$(".filter li a").on("click", function (e) {
+$(".filter li a").on("click", function(e){
     e.preventDefault();
 
     var sort = $(this).attr("href");
