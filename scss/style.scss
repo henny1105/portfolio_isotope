@@ -113,7 +113,7 @@ header {
         position: absolute;
         top: 16%;
         left: 28%;
-        font: 50px/1.2 'Georama';
+        font: 50px/1 'Georama';
         font-weight: 600;
         color: #35332b;
     }
@@ -138,6 +138,7 @@ header {
         background: #006241;
         text-align: center;
         transition: 0.5s;
+        border-radius: 5px;
 
         &:hover {
             background: #079264;
@@ -172,10 +173,12 @@ header {
                 width: 100px;
                 height: 30px;
                 font: 13px/30px 'Open Sans';
+                font-weight: 400;
                 background: #fff;
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
                 color: #aaa;
                 text-align: center;
+                border-radius: 5px;
 
                 &.on {
                     background: #006241;
@@ -217,10 +220,9 @@ header {
 
                 h2 {
                     display: inline-block;
-                    font: bold 13px/1 'Montserrat';
+                    font: bold 15px/1 'Montserrat';
                     color: #222;
                     margin-bottom: 5px;
-                    letter-spacing: 1px;
                 }
 
                 strong {
@@ -239,6 +241,10 @@ header {
                         background-color: #ffa135;
                     }
 
+                    &.hot {
+                        background-color: #ff4a3d;
+                    }
+
                 }
 
 
@@ -252,7 +258,7 @@ header {
                 }
 
                 p {
-                    font: 12px/1.2 'Open Sans';
+                    font: 13px/1.4 'Open Sans';
                     color: #555;
                     margin-bottom: 15px;
                     margin-top: 10px;
